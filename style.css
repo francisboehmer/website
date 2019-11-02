@@ -13,7 +13,7 @@
 	text-align: center;
 	font-family: 'lato', sans-serif;
 	font-size: 40px;
-	font-feature-settings: "hairline";
+	font-weight: 100;
 }
 
 .p2{
@@ -21,5 +21,5 @@
 	text-align: center;
 	font-family: 'lato', sans-serif;
 	font-size: 50px;
-	font-feature-settings: "black";
+	font-weight: 900;
 }
