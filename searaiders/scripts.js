@@ -42,7 +42,7 @@ console.log("in scripts");
     let bossSpeed = 0.0625;
     let boss = [];
     boss[0] = {
-        x: canvas.width / 2,
+        x: 250,
         y: -300
     };
     let bH;
@@ -93,6 +93,14 @@ console.log("in scripts");
     coinImg.src = 'images/Coin.png';
     coinImg.addEventListener('load', startGame);
 
+    let arrowImg = new Image();
+    arrowImg.src = 'images/arrow.png';
+    arrowImg.addEventListener('load', startGame);
+
+    let spaceImg = new Image();
+    spaceImg.src = 'images/space.png';
+    spaceImg.addEventListener('load', startGame);
+
 	// Variables for sound fx and music
 	let hit = document.getElementById("hit");
 	let fire = document.getElementById("fire");
@@ -103,8 +111,118 @@ console.log("in scripts");
 
 //Eventlistners
 document.addEventListener("keydown", keyDownHandler, false);
+document.getElementById("left").addEventListener("click", leftButton, false);
+document.getElementById("fireCanon").addEventListener("click", fireButton, false);
+document.getElementById("right").addEventListener("click", rightButton, false);
+document.getElementById("myCanvas").addEventListener("touchstart", touchStart, false);
+
+myButton.addEventListener('touchstart', preventZoom); 
 
 //The following are functions
+
+//The following controls the buttons
+function leftButton() {
+    shipX = shipX - shipMovement;
+        pirateship = new Image();
+        pirateship.src = 'images/pirateshipL.png';
+        shipL = true;
+}
+
+function fireButton() {
+    if (gameOn == true && splashScreenOn == false) {
+            playFire();
+            if (ball.length < ballMax){
+                ball.push({
+                    x: shipX + 38,
+                    y: canvas.height - 20
+                });
+            }
+    }
+}
+    
+function rightButton() {
+    shipX = shipX + shipMovement;
+        pirateship = new Image();
+        pirateship.src = 'images/pirateship.png';
+        shipL = false;
+}
+
+function preventZoom(e) {
+  var t2 = e.timeStamp;
+  var t1 = e.currentTarget.dataset.lastTouch || t2;
+  var dt = t2 - t1;
+  var fingers = e.touches.length;
+  e.currentTarget.dataset.lastTouch = t2;
+
+  if (!dt || dt > 500 || fingers > 1) return; // not double-tap
+
+  e.preventDefault();
+  e.target.click();
+}
+
+//touch screen 
+function touchStart(){
+	if(splashScreenOn == true || gameOn == false){
+		splashScreenOn = false;
+		gameOn = true;
+	}
+    
+            if (gameOver == true) {
+            lvl = 1;
+            score = 0;
+            playerHealth = 3;
+            
+            enemy = [];
+            enemy[0] = {
+                x: Math.floor(Math.random() * canvas.width) - 75,
+                y: -180
+            };
+            
+            eHealth = 5;
+            enemyHealth = [eHealth];
+            
+            boss = [];
+            boss[0] = {
+                x: 250,
+                y: -300
+            };
+            bHealth = 20;
+            bossHealth = [bHealth];
+            
+            gameOver = false;
+            gameWin = false;
+            gameOn = false;
+            splashScreenOn = true;
+            bossOn = false;
+        } else if (gameWin == true) {
+            lvl = 1;
+            score = 0;
+            playerHealth = 3;
+            
+            enemy = [];
+            enemy[0] = {
+                x: Math.floor(Math.random() * canvas.width) - 75,
+                y: -180
+            };
+            eHealth = 5;
+            enemyHealth = [eHealth];
+            
+            boss = [];
+            boss[0] = {
+                x: 250,
+                y: -300
+            };
+            
+            bHealth = 20;
+            bossHealth = [bHealth];
+            
+            gameWin = false;
+            gameOver = false;
+            gameOn = false;
+            splashScreenOn = true;
+            bossOn = false;
+        }
+}
 
 // The following section runs when the game first loads
 function startGame() {
@@ -144,6 +262,9 @@ function gameLoop() {
     if (bossOn == true || gameOver == true || gameWin == true) {
         playBoss();
         pausebackMusic();
+    } else if(splashScreenOn == true) {
+        pausebackMusic();
+        pauseBoss();
     } else {
         pauseBoss();
         playbackMusic();
@@ -403,7 +524,7 @@ function gameUpdate() {
 // The following diplays the splashscreen
 function displaySplashScreen(){
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
-
+    
 	ctx.drawImage(splashScreenImg1, srcX, srcY, spriteWidth, spriteHeight,
         x, y, spriteWidth, spriteHeight);
 	
@@ -415,8 +536,20 @@ function displaySplashScreen(){
         	} else {
             	row = 0;
         		}
-}
+        }
 		srcY = row * spriteHeight;
+    ctx.beginPath();
+    ctx.font = "25px Verdana";
+    ctx.fillStyle = "#B42615 ";
+    ctx.fillText("SPACE or TOUCH TO START", 100, 460);
+    ctx.drawImage(arrowImg, 370, 520, 105, 50);
+    ctx.drawImage(spaceImg, 70, 520, 105, 50);
+    ctx.font = "20px Verdana";
+    ctx.fillText("Move Player", 360, 610);
+    ctx.fillText("Fire Canon", 70, 610);
+    ctx.stroke();
+    
+    
 }
 
 // The following section makes the keys functional
@@ -467,7 +600,7 @@ function keyDownHandler(e) {
             
             boss = [];
             boss[0] = {
-                x: canvas.width / 2,
+                x: 250,
                 y: -300
             };
             bHealth = 20;
@@ -493,7 +626,7 @@ function keyDownHandler(e) {
             
             boss = [];
             boss[0] = {
-                x: canvas.width / 2,
+                x: 250, 
                 y: -300
             };
             
