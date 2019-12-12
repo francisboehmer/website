@@ -2,7 +2,7 @@
 
 body{
 	margin: 0px;
-	background-color: #EEEEEE;
+	background-color: #B3DAFF;
 }
 
 /* NAVBAR */
@@ -14,6 +14,7 @@ body{
 }
 
 #navbar{
+	margin-bottom: 0em;
 	padding: 1em 0.2em 0.2em 0.2em;
 	background-color: #FEFEFE;
 	width: 100%;
@@ -30,21 +31,25 @@ body{
 
 #pagelinks{
 	display: block;
+	float: right;
 	text-align: right;
-	margin-top: -3.2em;
+	margin-top: -3.6em;
 	margin-bottom: 1.2em;
+	width: 55%;
 }
 
 #pagelinks a{
-	margin-right: 5%;
+	display: inline-block;
+	margin-right: 6%;
+	margin-bottom: 0.2em;
 	color: #222222;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
 	font-weight: 400;
 }
 
-#pagelinks a:last-of-type{
-	margin-right: 8%;
+#pagelinks a:first-of-type{
+	text-decoration: underline;
 }
 
 #navbar a{
@@ -61,4 +66,96 @@ body{
 
 #navbar a:hover{
 	color: #86D6FF;
+}
+
+/* Sub Navigation */
+
+#subnav{
+	text-align: center;
+	padding: 1em 0em 1em 0em;
+	background-color: #3F9AF7;
+}
+
+#subnav a{
+	text-decoration: none;
+	padding: 0.2em 1em 0.2em 1em;
+	margin: 0em 1em 0em 1em;
+	border-radius: 0.6em;
+	color: #3F9AF7;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	background-color: #FFFFFF;
+}
+
+/* Page Specific */
+
+.resumeblock1{
+	margin: 3em 6em 1em 6em;
+}
+
+.resumeblock1 h2{
+	text-align: center;
+	color: #222222;
+	font-family: 'Lato', sans-serif;
+	font-size: 2em;
+	font-weight: 600;
+}
+
+.resumeblock1 h3{
+	color: #222222;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+.resumeblock1 p{
+	color: #222222;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+}
+
+.resumeblock1 ul{
+	color: #222222;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.1em;
+	font-weight: 400;
+}
+
+.resumeblock2{
+	margin: 3em 6em 1em 6em;
+}
+
+.resumeblock2 h1{
+	text-align: center;
+	color: #222222;
+	font-family: 'Lato', sans-serif;
+	font-size: 2em;
+	font-weight: 600;
+}
+
+.resumeblock2 h2{
+	margin: -0.1em 0em 0em 0em;
+	color: #222222;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.4em;
+	font-weight: 600;
+}
+
+.resumeblock2 h3{
+	margin: -0.1em 0em 0em 0em;
+	color: #222222;
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+.resumeblock2 p{
+	margin: -0.1em 0em 0em 0em;
+	color: #222222;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
 }

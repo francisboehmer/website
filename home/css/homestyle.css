@@ -14,6 +14,7 @@ body{
 }
 
 #navbar{
+	margin-bottom: 3em;
 	padding: 1em 0.2em 0.2em 0.2em;
 	background-color: #FEFEFE;
 	width: 100%;
@@ -30,21 +31,21 @@ body{
 
 #pagelinks{
 	display: block;
+	float: right;
 	text-align: right;
-	margin-top: -3.2em;
+	margin-top: -3.6em;
 	margin-bottom: 1.2em;
+	width: 55%;
 }
 
 #pagelinks a{
-	margin-right: 5%;
+	display: inline-block;
+	margin-right: 6%;
+	margin-bottom: 0.2em;
 	color: #222222;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
 	font-weight: 400;
-}
-
-#pagelinks a:last-of-type{
-	margin-right: 8%;
 }
 
 #navbar a{
@@ -66,13 +67,17 @@ body{
 /* Socials */
 
 #socials a{
-	margin-left: 1em;
+	margin-left: 1.4em;
 	display: inline-block;
 	text-decoration: none;
 	text-align: center;
 	width: 2em;
 	height: 2em;
 	border-radius: 100%;
+}
+
+#socials a:first-of-type{
+	margin-left: 0em;
 }
 
 #socials a:hover{
@@ -87,27 +92,44 @@ body{
 
 #me1{
 	float: right;
-	margin-right: 4em;
-	margin-top: 2em;
-	height: 500px;
+	margin: 0em 3em 4em 3em;
+	height: 400px;
 }
 
-h2{
-	color: #222222;
-	padding-top: 0.8em;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 2em;
-	font-weight: 600;
+.homeblock1{
+	margin: 3em 0em 1em 3em;
 }
 
-p{
+.homeblock1 h2{
+	color: #3F9AF7;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.6em;
+	font-weight: 700;
+}
+
+.homeblock1 p{
 	color: #222222;
-	padding-top: 0.8em;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.2em;
 	font-weight: 400;
 }
 
-#aboutme{
-	margin: 1em 2em 1em 2em;
+.homeblock2{
+	margin: 2em 0em 1em 3em;
 }
+
+.homeblock2 h3{
+	color: #3F9AF7;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.4em;
+	font-weight: 900;
+}
+
+.homeblock2 p{
+	color: #222222;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.1em;
+	font-weight: 400;
+}
+
+

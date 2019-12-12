@@ -14,6 +14,7 @@ body{
 }
 
 #navbar{
+	margin-bottom: 3em;
 	padding: 1em 0.2em 0.2em 0.2em;
 	background-color: #FEFEFE;
 	width: 100%;
@@ -30,21 +31,21 @@ body{
 
 #pagelinks{
 	display: block;
+	float: right;
 	text-align: right;
-	margin-top: -3.2em;
+	margin-top: -3.6em;
 	margin-bottom: 1.2em;
+	width: 55%;
 }
 
 #pagelinks a{
-	margin-right: 5%;
+	display: inline-block;
+	margin-right: 6%;
+	margin-bottom: 0.2em;
 	color: #222222;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
 	font-weight: 400;
-}
-
-#pagelinks a:last-of-type{
-	margin-right: 8%;
 }
 
 #navbar a{
