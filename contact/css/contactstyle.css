@@ -63,3 +63,58 @@ body{
 #navbar a:hover{
 	color: #86D6FF;
 }
+
+/* Socials */
+
+#socials a{
+	margin-left: 1.4em;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	width: 2em;
+	height: 2em;
+	border-radius: 100%;
+}
+
+#socials a:first-of-type{
+	margin-left: 0em;
+}
+
+#socials a:hover{
+	opacity: 70%;
+}
+
+.icons img{
+	width: 2em;
+}
+
+/* Page Specific */
+
+#gencontact h1{
+	text-align: center;
+	color: #222222;
+	font-family: 'Lato', sans-serif;
+	font-size: 2em;
+	font-weight: 600;
+}
+
+#gencontact h3{
+	text-align: center;
+	color: #222222;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+	font-weight: 400;
+}
+
+#gencontact p{
+	text-align: center;
+	color: #222222;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+}
+
+#socials{
+	text-align: center;
+}
+
