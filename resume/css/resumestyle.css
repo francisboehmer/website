@@ -2,7 +2,7 @@
 
 body{
 	margin: 0px;
-	background-color: #B3DAFF;
+	background-color: #E2F5FF;
 }
 
 /* NAVBAR */
@@ -92,6 +92,23 @@ body{
 
 .resumeblock1{
 	margin: 3em 8em 1em 8em;
+}
+
+.resumeblock1 a{
+	color: #222222;
+	text-decoration: none;
+}
+
+.resumeblock1 a:active{
+	color: #222222;
+}
+
+.resumeblock1 a:visited{
+	color: #222222;
+}
+
+.resumeblock1 a:hover{
+	color:  #86D6FF;
 }
 
 .resumeblock1 h2{

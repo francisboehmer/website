@@ -48,6 +48,10 @@ body{
 	font-weight: 400;
 }
 
+#pagelinks a:nth-of-type(5){
+	text-decoration: underline;
+}
+
 #navbar a{
 	text-decoration: none;
 }
