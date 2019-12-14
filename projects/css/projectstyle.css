@@ -154,3 +154,12 @@ body{
 	margin: 1em 1em 1em 1em;
 	text-align: center;
 }
+
+#cxreport{
+	text-align: center;
+}
+
+.cximg{
+	width: 100%;
+	max-width: 2400px;
+}
