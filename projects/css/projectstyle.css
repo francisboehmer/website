@@ -14,7 +14,7 @@ body{
 }
 
 #navbar{
-	margin-bottom: 3em;
+	margin-bottom: 0em;
 	padding: 1em 0.2em 0.2em 0.2em;
 	background-color: #FEFEFE;
 	width: 100%;
@@ -66,4 +66,91 @@ body{
 
 #navbar a:hover{
 	color: #86D6FF;
+}
+
+/* Sub Navigation */
+
+#subnav{
+	text-align: center;
+	padding: 1em 0em 1em 0em;
+	background-color: #222222;
+}
+
+#subnav a{
+	text-decoration: none;
+	padding: 0.2em 1em 0.2em 1em;
+	margin: 0em 1em 0em 1em;
+	border-radius: 0.6em;
+	color: #222222;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	background-color: #FFFFFF;
+}
+
+/* Page Specific */
+
+#definition{
+	float: right;
+	padding-left: 4em;
+	padding-bottom: 2em;
+	width: 30%;
+}
+
+#audiothumbnail1{
+	float: left;
+	padding: 0em 4em 2em 0em;
+	width: 20%;
+}
+
+#audiothumbnail2{
+	width: 30%;
+}
+
+.projectblock1{
+	display: block;
+	margin: 3em 4em 4em 4em;
+}
+
+.projectblock1 h2{
+	color: #222222;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.4em;
+	font-weight: 600;
+}
+
+.projectblock1 p{
+	color: #222222;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+}
+
+.projectblock1 a{
+	color: #222222;
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	font-weight: 600;
+}
+
+.projectblock1 a:active{
+	color: #222222;
+}
+
+.projectblock1 a:visited{
+	color: #222222;
+}
+
+.projectblock1 a:hover{
+	color: #86D6FF;
+}
+
+#video{
+	margin: 3em 1em 1em 1em;
+	text-align: center;
+}
+
+#doc{
+	margin: 1em 1em 1em 1em;
+	text-align: center;
 }
