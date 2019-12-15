@@ -101,7 +101,7 @@ body{
 }
 
 .homeblock1 h2{
-	color: #3F9AF7;
+	color: #FF9310;
 	font-family: 'Lato', sans-serif;
 	font-size: 1.6em;
 	font-weight: 700;
@@ -130,4 +130,16 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
 	font-weight: 400;
+}
+
+.homeblock2 a{
+	color: #3F9AF7;
+}
+
+.homeblock2 a:active{
+	color: #3F9AF7;
+}
+
+.homeblock2 a:visited{
+	color: #3F9AF7;
 }

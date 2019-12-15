@@ -107,6 +107,13 @@ body{
 	width: 30%;
 }
 
+#cxthumbnail{
+	float: right;
+	padding-left: 4em;
+	padding-bottom: 2em;
+	width: 30%;
+}
+
 .projectblock1{
 	display: block;
 	margin: 3em 4em 4em 4em;
