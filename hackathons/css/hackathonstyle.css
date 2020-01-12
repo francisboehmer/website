@@ -101,8 +101,46 @@ body{
 /* Page Specific */
 
 .hackblock1{
-	display: block;
-	margin: 1em 3em 1em 3em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0.2em 1em 0.2em 1em;
+}
+
+.imgblock1{
+	text-align: center;
+	width: 35%;
+}
+
+.textblock1{
+	width: 65%;
+	padding: 0em 1em 0em 1em;
+}
+
+.imgblock2{
+	text-align: center;
+	width: 25%;
+}
+
+.textblock2{
+	width: 75%;
+	padding: 0em 1em 0em 1em;
+}
+
+.imgblock3{
+	text-align: center;
+	width: 100%;
+}
+
+.textblock3{
+	width: 100%;
+	padding: 0em 1em 0em 1em;
+}
+
+.textblock4{
+	text-align: center;
+	width: 100%;
+	padding: 0em 1em 0em 1em;
 }
 
 .hackblock1 h2{
@@ -139,34 +177,22 @@ body{
 	color: #86D6FF;
 }
 
-.imgblock1{
-	display: block;
-	text-align: center;
-	margin: 2em 3em 2em 3em;
-}
-
 #image1{
-	float: right;
-	padding-left: 2em;
-	padding-bottom: 1em;
-	width: 30%;
+	width: 100%;
 	max-width: 300px;
+	min-width: 250px;
 }
 
 #image2{
-	float: left;
-	padding-right: 2em;
-	padding-bottom: 1em;
-	width: 25%;
-	max-width: 300px;
+	width: 100%;
+	max-width: 200px;
+	min-width: 150px;
 }
 
 #image3{
-	float: right;
-	padding-left: 2em;
-	padding-bottom: 1em;
-	width: 20%;
-	max-width: 240px;
+	width: 100%;
+	max-width: 200px;
+	min-width: 150px;
 }
 
 #image4{

@@ -100,6 +100,10 @@ body{
 
 /* Sub Navigation */
 
+#allcontent{
+	margin-bottom: 2em;
+}
+
 #subnav{
 	display: flex;
 	flex-wrap: wrap;
@@ -158,6 +162,7 @@ body{
 
 .imgblock1{
 	width: 35%;
+	text-align: center;
 }
 
 .textblock1{
@@ -167,6 +172,7 @@ body{
 
 .imgblock2{
 	width: 25%;
+	text-align: center;
 }
 
 .textblock2{
