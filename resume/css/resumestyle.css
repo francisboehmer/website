@@ -2,7 +2,7 @@
 
 body{
 	margin: 0px;
-	background-color: #E2F5FF;
+	background-color: #B0E6FF;
 }
 
 /* NAVBAR */
@@ -98,18 +98,23 @@ body{
 	
 }
 
-/* Sub Navigation */
+/* links */
 
-#subnav{
-	text-align: center;
-	padding: 1em 0em 1em 0em;
+#links{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0.2em 0em 0.6em 0em;
 	background-color: #3F9AF7;
 }
 
-#subnav a{
+#links a{
+	display: flex;
+	justify-content: center;
+	text-align: center;
 	text-decoration: none;
 	padding: 0.2em 1em 0.2em 1em;
-	margin: 0em 1em 0em 1em;
+	margin: 0.4em 0.2em 0em 0.2em;
 	border-radius: 0.6em;
 	color: #3F9AF7;
 	font-family: 'Open Sans', sans-serif;
@@ -120,93 +125,14 @@ body{
 
 /* Page Specific */
 
-.resumeblock1{
-	margin: 3em 8em 1em 8em;
-}
-
-.resumeblock1 a{
-	color: #222222;
-	text-decoration: none;
-}
-
-.resumeblock1 a:active{
-	color: #222222;
-}
-
-.resumeblock1 a:visited{
-	color: #222222;
-}
-
-.resumeblock1 a:hover{
-	color:  #86D6FF;
-}
-
-.resumeblock1 h2{
+#iframecont{
 	text-align: center;
-	color: #222222;
-	font-family: 'Lato', sans-serif;
-	font-size: 2em;
-	font-weight: 600;
 }
 
-.resumeblock1 h3{
-	text-align: center;
-	color: #222222;
-	font-family: 'Lato', sans-serif;
-	font-size: 1.2em;
-	font-weight: 600;
-}
-
-.resumeblock1 p{
-	text-align: center;
-	color: #222222;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1em;
-	font-weight: 400;
-}
-
-.resumeblock1 ul{
-	margin-left: 40%;
-	text-align: left;
-	color: #222222;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.1em;
-	font-weight: 400;
-}
-
-.resumeblock2{
-	margin: 3em 10em 1em 10em;
-}
-
-.resumeblock2 h1{
-	margin: 0.2em 0em 0em 0em;
-	color: #222222;
-	font-family: 'Lato', sans-serif;
-	font-size: 1.4em;
-	font-weight: 600;
-}
-
-.resumeblock2 h2{
-	margin: 0.2em 0em 0em 0em;
-	color: #222222;
-	font-family: 'Lato', sans-serif;
-	font-size: 1.1em;
-	font-weight: 600;
-}
-
-.resumeblock2 h3{
-	margin: 0.2em 0em 0em 0em;
-	color: #222222;
-	font-family: 'Lato', sans-serif;
-	font-style: italic;
-	font-size: 1em;
-	font-weight: 600;
-}
-
-.resumeblock2 p{
-	margin: 0.2em 0em 0em 0em;
-	color: #222222;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1em;
-	font-weight: 400;
+iframe{
+	margin: 2em 1em 1em 1em;
+	width: 90%;
+	max-width: 1200px;
+	height: 800px;
+	border: 0px;
 }
