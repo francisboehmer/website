@@ -144,8 +144,8 @@ body{
 
 #audiothumbnail1{
 	width: 100%;
-	max-width: 200px;
-	min-width: 100px;
+	max-width: 300px;
+	min-width: 200px;
 }
 
 #audiothumbnail2{
@@ -159,11 +159,48 @@ body{
 	min-width: 200px;
 }
 
+#gotthumbnail{
+	width: 100%;
+	max-width: 300px;
+	min-width: 200px;
+}
+
+#searaidersthumbnail{
+	width: 100%;
+	max-width: 300px;
+	min-width: 200px;
+}
+
 .projectblock1{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 1em 1em 0.2em 1em;
+	margin: 1em;
+}
+
+.projectblock2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1em;
+}
+
+.projectblock1:not(:first-child) {
+	border-bottom: 2px solid #CCCCCC;
+}
+
+.projectblock1 h1{
+	color: #222222;
+	font-family: 'Lato', sans-serif;
+	font-size: 2em;
+	font-weight: 400;
+}
+
+.projectblock2 h1{
+	color: #222222;
+	font-family: 'Lato', sans-serif;
+	font-size: 2em;
+	font-weight: 400;
 }
 
 .imgblock1{
@@ -176,16 +213,6 @@ body{
 	padding: 1em;
 }
 
-.imgblock2{
-	width: 25%;
-	text-align: center;
-}
-
-.textblock2{
-	width: 75%;
-	padding: 1em;
-}
-
 .projectblock1 h2{
 	color: #222222;
 	font-family: 'Lato', sans-serif;
@@ -193,7 +220,21 @@ body{
 	font-weight: 600;
 }
 
+.projectblock2 h2{
+	color: #222222;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.4em;
+	font-weight: 600;
+}
+
 .projectblock1 p{
+	color: #222222;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+}
+
+.projectblock2 p{
 	color: #222222;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
@@ -216,6 +257,25 @@ body{
 }
 
 .projectblock1 a:hover{
+	color: #86D6FF;
+}
+
+.projectblock2 a{
+	color: #222222;
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	font-weight: 600;
+}
+
+.projectblock2 a:active{
+	color: #222222;
+}
+
+.projectblock2 a:visited{
+	color: #222222;
+}
+
+.projectblock2 a:hover{
 	color: #86D6FF;
 }
 

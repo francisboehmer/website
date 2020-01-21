@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+    <title>Sea Raiders</title>
+	
+    <link rel="stylesheet" type="text/css" href="styles.css">
+	
+	<!-- Imported Fonts -->
+
+	<link href="https://fonts.googleapis.com/css?
+			family=Lato:100,100i,300,300i,400,400i,
+			700,700i,900,900i&display=swap&subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?
+			family=Open+Sans:300,300i,400,400i,600,600i,
+			700,700i,800,800i&display=swap" rel="stylesheet">
+	
+	<style>
+	#subnav a:nth-child(4){
+		background-color: #3F9AF7;
+		color: #FFFFFF;
+		text-decoration: underline;
+	}	
+	</style>
+</head>
+<body>
+	
+		<!-- Navigation Bar -->
+		
+		<div id="navbar">
+			
+			<section id="logotitle">
+			
+				<img id="logo" src="images/logo.svg" alt="My Logo"/>
+				
+				<h1><a href="../../index.html">FRANCIS BOEHMER</a></h1>
+		
+			</section>
+			
+			<section id="pagelinks">
+				
+				<ul>
+			
+					<li><a href="../index.html">PROJECTS</a></li>
+				
+					<li><a href="../../hackathons/index.html">HACKATHONS</a></li>
+				
+					<li><a href="../../photography/index.html">PHOTOGRAPHY</a></li>
+					
+					<li><a href="../../resume/index.html">RESUME</a></li>
+				
+					<li><a href="../../contact/index.html">CONTACT</a></li>
+			
+				</ul>
+				
+			</section>
+			
+		</div>
+		
+		<!-- Sub Navigation -->
+		
+		<div id="subnav">
+			
+			<a href="../index.html">ALL PROJECTS</a>	
+			
+			<a href="../cxreport/index.html">CX REPORT</a>
+			
+			<a href="../html/webapp.html">WEB APP</a>
+			
+			<a href="index.html">GAME</a>
+			
+			<a href="../html/documentary.html">DOCUMENTARY</a>
+			
+			<a href="../html/audiodoc.html">AUDIO DOC</a>
+			
+		</div>
+    
+    <img src="images/Font1.png" width="550">
+
+	<canvas id="myCanvas" width="550" height="650"></canvas>
+    
+    <div class="controls button-align">
+        <div>
+        <button class="button" id="left" type="button"  >Left</button>
+        </div>
+        <div>
+        <button class="button" id="fireCanon" type="button" >Fire</button>
+        </div>
+        <div>
+        <button class="button" id="right" type="button" >Right</button>
+        </div>
+    </div>
+    
+	<!-- The following section loads in the audio files
+	used for sound fx's and music -->
+	
+	<audio id="fire" src="sound/fire.mp3" type="audio/mpeg"></audio>
+	<audio id="hit" src="sound/hit.mp3" type="audio/mpeg"></audio>
+    <audio id="explosion" src="sound/explosion.mp3" type="audio/mpeg"></audio>
+    <audio id="hurt" src="sound/hurt.mp3" type="audio/mpeg"></audio>
+    <audio id="bossSound" src="sound/boss.mp3" type="audio/mpeg"></audio>
+    <audio id="backMusic" src="sound/backgroundMusic.mp3" type="audio/mpeg"></audio>
+    
+
+    <script src="scripts.js"></script>
+</body>
+</html>
