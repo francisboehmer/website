@@ -151,13 +151,6 @@ body{
 	text-align: center;
 }
 
-.homeblock1 h2{
-	color: #50CF00;
-	font-family: 'Lato', sans-serif;
-	font-size: 1.6em;
-	font-weight: 700;
-}
-
 .homeblock1 p{
 	color: #222222;
 	font-family: 'Open Sans', sans-serif;
@@ -171,7 +164,7 @@ body{
 }
 
 .homeblock2 h3{
-	color: #3F9AF7;
+	color: #6E95AE;
 	font-family: 'Lato', sans-serif;
 	font-size: 1.3em;
 	font-weight: 900;
