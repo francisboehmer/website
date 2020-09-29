@@ -142,15 +142,10 @@ body{
 	min-width: 200px;
 }
 
-#audiothumbnail1{
+#designsprintthumbnail1{
 	width: 100%;
 	max-width: 300px;
 	min-width: 200px;
-}
-
-#audiothumbnail2{
-	width: 50%;
-	max-width: 300px;
 }
 
 #cxthumbnail{
@@ -294,6 +289,15 @@ body{
 }
 
 .cximg{
-	width: 100%;
+	width: 90%;
+	max-width: 1800px;
+}
+
+#designsprint{
+	text-align: center;
+}
+
+.dsimg{
+	width: 80%;
 	max-width: 1800px;
 }
