@@ -178,6 +178,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	margin: 1em;
+	padding: 0em 2em 0em 2em;
 }
 
 .projectblock1:not(:first-child) {
