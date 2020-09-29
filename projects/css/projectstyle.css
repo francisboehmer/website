@@ -178,7 +178,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	margin: 1em;
-	padding: 0em 2em 0em 2em;
+	padding: 0em 6em 0em 6em;
 }
 
 .projectblock1:not(:first-child) {
@@ -233,7 +233,7 @@ body{
 .projectblock2 p{
 	color: #222222;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1em;
+	font-size: 1.2em;
 	font-weight: 400;
 }
 
